@@ -1,0 +1,106 @@
+/* set the body margin to fill the area */
+*,body{
+  margin: 0;
+}
+
+/* menu container */
+#MENU{
+  height: 100px;
+  width: auto;
+  font-size: 20px;
+  background-color: red;
+  padding-left: 20px;
+  border-top-left-radius:20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-style: solid;
+}
+
+/* main container */
+#container{
+  width:auto;
+  height:80vh;
+  background-color: green;
+}
+
+/* Change view in less than 583px window */
+@media only screen and (min-width: 0px) and (max-width: 583px) {
+   #MENU{
+     width:auto;
+     height: 50px;
+   }
+
+   /* selection list */
+   #list{
+    margin-left: 2%;
+    margin-top: 2%;
+  }
+  
+  /* textarea */
+  #text{
+    height: 40%;
+    display: block;
+    margin-left: 3%;
+    margin-top: 2%;
+  }
+  
+  /* Button */
+  #button{
+    margin-left: 4%;
+    margin-top: 2%;
+  }
+}
+
+/* Change view in 583px - 900px window */
+@media only screen and (min-width: 583px) and (max-width: 900px) {
+
+  /* selection list */
+   #list{
+    margin-left: 2%;
+    margin-top: 2%;
+  }
+  
+  /* textarea */
+  #text{
+    height: 30%;
+    position: fixed;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 2%;
+  }
+  
+  /* Button */
+  #button{
+    position: fixed;
+    top: 40%;
+    left: 3%;
+  }
+}
+
+/* Change view in more than 900px window */
+@media only screen and (min-width: 900px) {
+   #MENU{
+     width:auto;
+     height: 100px;
+   }
+   
+   /* selection list */
+   #list{
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+  
+  /* textarea */
+  #text{
+    height: 40%;
+    margin-left: 6%;
+    margin-top: 2%;
+  }
+  
+  /* Button */
+  #button{
+    margin-left: 7%;
+    margin-top: 2%;
+  }
+}
